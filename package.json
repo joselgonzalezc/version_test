@@ -2,9 +2,17 @@
   "name": "@version/test",
   "version": "0.0.0",
   "description": "Test for versioning mpodules",
-  "homepage": "https://bitbucket.org/qrvey/qrvey_utils/wiki/Home",
+  "homepage": "https://github.com/joselgonzalezc/version_test",
   "main": "dist/index.js",
   "devDependencies": {
-    "typescript": "^4.6.3"
+    "eslint": "8.11.0",
+    "doxdox": "3.0.0",
+    "np": "7.6.1",
+    "typescript": "4.6.3"
+  },
+  "scripts": {
+    "build": "tsc && tsc -m commonjs --outDir dist/cjs",
+    "build-clean": "node ./scripts/clean-build",
+    "publishing-v2": "node ./scripts/publishing --np-new-version=$npm_config_np_new_version --np-any-branch=$npm_config_np_any_branch --np-tag=$npm_config_np_tag"
   }
 }
