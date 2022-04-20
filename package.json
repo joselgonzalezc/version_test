@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc && tsc -m commonjs --outDir dist/cjs",
     "build-clean": "node ./scripts/clean-build",
-    "publishing": "np",
+    "publishing": "np --no-tests",
     "publishing-v2": "node ./scripts/publishing --np-new-version=$npm_config_np_new_version --np-any-branch=$npm_config_np_any_branch --np-tag=$npm_config_np_tag"
   },
   "repository": {
