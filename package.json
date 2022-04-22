@@ -1,6 +1,6 @@
 {
   "name": "@joselgonzalezc91/test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test for versioning modules",
   "homepage": "https://github.com/joselgonzalezc/version_test",
   "main": "dist/index.js",
